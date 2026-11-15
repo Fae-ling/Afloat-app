@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Flight status key · Afloat</title>
+<meta name="color-scheme" content="light dark">
+<style>
+  :root { --bg: #EEF3F2; --card: #fff; --ink: #14303A; --muted: #4F6870; --line: #D5E1DF; --sea: #257A75; --warm: #FFF4E5; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #10191C; --card: #18252A; --ink: #E4EEEC; --muted: #9DB2B1; --line: #2A3B40; --sea: #5FB7AE; --warm: #2A2418; } }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 17px/1.55 system-ui, -apple-system, "Segoe UI", sans-serif; }
+  main { max-width: 640px; margin: 0 auto; padding: 28px 16px 48px; }
+  h1 { font-size: 1.6rem; line-height: 1.2; margin: 0 0 6px; }
+  .lede { color: var(--muted); margin: 0 0 22px; }
+  section { background: var(--card); border: 1px solid var(--line); border-radius: 18px; padding: 18px 18px 6px; margin: 0 0 14px; }
+  h2 { font-size: 1.1rem; margin: 0 0 8px; }
+  ol { padding-left: 1.3em; margin: 0 0 12px; } li { margin: 0 0 8px; }
+  .note { background: var(--warm); border-radius: 14px; padding: 12px 14px; margin: 0 0 12px; }
+  code, b.k { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: .92em; }
+  a { color: var(--sea); }
+  .back { display: inline-block; margin-top: 10px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Flight status</h1>
+  <p class="lede">With this key, typing a flight number into a plan fills in the time and the airport, and on the day Afloat shows delays, the terminal, check-in desks and the gate, or a cancellation. The data comes from AeroDataBox, through RapidAPI (a marketplace for these services). It takes about five minutes, once.</p>
+
+  <section>
+    <h2>What it costs</h2>
+    <p>The <b>Basic</b> plan is free and usually needs no card. It allows a few hundred lookups a month, which is plenty: Afloat asks about a flight when you look it up and a few times on the day before and the day itself.</p>
+    <div class="note">The free plan has a hard limit, so it can never charge you. If it runs out in a busy month, flight details simply stop until the next month.</div>
+  </section>
+
+  <section>
+    <h2>1. Make a RapidAPI account</h2>
+    <ol>
+      <li>Open <a href="https://rapidapi.com/aedbx-aedbx/api/aerodatabox" target="_blank" rel="noopener">AeroDataBox on RapidAPI</a>.</li>
+      <li>Sign up (an email address or your Google account is enough).</li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>2. Choose the free plan</h2>
+    <ol>
+      <li>On the AeroDataBox page, open <b>Pricing</b>.</li>
+      <li>Under <b>Basic</b> ($0), tap <b>Subscribe</b>. Don’t pick a paid plan.</li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>3. Copy the key</h2>
+    <ol>
+      <li>Open the <b>Endpoints</b> (or Playground) tab of AeroDataBox.</li>
+      <li>In the example request, find <code>X-RapidAPI-Key</code> and copy the value next to it: a long mix of letters and numbers.</li>
+      <li>It’s your RapidAPI key, the same for every service there, so treat it like a password.</li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>Add it to Afloat</h2>
+    <ol>
+      <li>In Afloat, open <b>Settings</b> (top right) → <b>Connections</b>, and scroll to <b>Travel services for Plans</b>.</li>
+      <li>Under <b>Flight status</b>, paste the key and tap <b>Save</b>. Afloat checks it with one small request, then it works for everyone in your household.</li>
+    </ol>
+    <div class="note">Afloat keeps the key on its server, where only Afloat can use it. Your phones, the other people in your household and other households never see it; Connections only shows its last four characters. To stop, tap <b>Remove</b> in Connections. Only the household’s owner can add or remove keys.</div>
+  </section>
+
+  <section>
+    <h2>Using it in a plan</h2>
+    <ol>
+      <li>In a plan, under <b>Getting there</b>, set the journey to <b>Flight</b>.</li>
+      <li>Type the flight number (like <code>OK652</code> or <code>FR 1234</code>) and tap <b>Look it up</b>. Afloat fills in the time, the airport and “be there 2 hours early”; change any of it under the journey.</li>
+      <li>Or paste the booking email with <b>✉ Add a booking</b>: the flight number comes along by itself.</li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>If something doesn’t work</h2>
+    <ol>
+      <li><b>“didn’t accept that key”</b>: check you subscribed to the Basic plan (step 2); a key without a plan is refused.</li>
+      <li><b>“No flight found that day”</b>: check the number and the journey’s date. Very far-off flights may not be scheduled yet.</li>
+      <li><b>“busy (too many asks)”</b>: the month’s free allowance is used up. It comes back on the 1st.</li>
+    </ol>
+  </section>
+  <a class="back" href="/#plans">← Back to Afloat</a>
+</main>
+</body>
+</html>

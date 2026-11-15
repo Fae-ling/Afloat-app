@@ -1,0 +1,16 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Connecting…</title>
+<style>body{font:16px system-ui,sans-serif;background:#EDF3F2;color:#14313A;display:grid;place-items:center;min-height:100vh;margin:0;padding:16px}@media (prefers-color-scheme:dark){body{background:#0D1B1F;color:#E2EEEC}}</style></head>
+<body><p id="m">Connecting…</p>
+<script>
+/* Trello and Google send people back here after they allow Afloat. Hand the result to the app and go back. */
+(function () {
+  var q = new URLSearchParams(location.search), h = new URLSearchParams(location.hash.slice(1)), want = sessionStorage.getItem('hp.state') || '', p = null;
+  if (h.get('token') && want.indexOf('trello:') === 0) p = { what: 'trello', token: h.get('token') };
+  else if (q.get('code') && q.get('state') && q.get('state') === want) p = { what: 'google', code: q.get('code') };
+  sessionStorage.removeItem('hp.state');
+  if (p) sessionStorage.setItem('hp.pending', JSON.stringify(p));
+  else if (q.get('error') || h.get('error')) document.getElementById('m').textContent = 'Not connected: ' + (q.get('error') || h.get('error')) + '. Going back…';
+  var back = sessionStorage.getItem('hp.back') || '../';
+  setTimeout(function () { location.replace(back); }, p ? 0 : 1500);
+})();
+</script></body></html>

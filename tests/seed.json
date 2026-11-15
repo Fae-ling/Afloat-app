@@ -1,0 +1,2440 @@
+{
+ "events/fw1095402740": {
+  "allDay": false,
+  "at": 1793000400000,
+  "by": "Alex",
+  "date": "2026-11-06",
+  "drop": "",
+  "end": "18:00",
+  "endDate": "2026-11-08",
+  "gId": null,
+  "gp": "Samovi rodiče",
+  "gpGId": "at08bt59jn9oi375si9g8jc37c",
+  "gpNotes": "Na chatě v horách",
+  "gpOnly": true,
+  "kind": "grandma",
+  "notes": "Na chatě v horách",
+  "pick": "",
+  "place": "",
+  "start": "17:00",
+  "title": "Mia & Zoe with Samovi rodiče",
+  "who": [
+   "Mia",
+   "Zoe"
+  ]
+ },
+ "events/fw1144219773": {
+  "allDay": false,
+  "at": 1793000000000,
+  "by": "Alex",
+  "date": "2026-11-22",
+  "end": "18:00",
+  "endDate": "2026-11-22",
+  "gId": "1qh37go2g8hb1e61jr284s71rc",
+  "kind": "other",
+  "notes": "",
+  "place": "",
+  "src0": "familywall",
+  "start": "17:00",
+  "title": "Powerpoint night",
+  "who": [
+   "Alex",
+   "Sam"
+  ]
+ },
+ "events/fw1108849255": {
+  "allDay": false,
+  "at": 1793000000000,
+  "by": "Alex",
+  "date": "2026-12-15",
+  "end": "19:00",
+  "endDate": "2026-12-15",
+  "gId": "k2iuk0dmoee728vvhhose39hjg",
+  "kind": "outing",
+  "notes": "",
+  "place": "Na Příkopě 22, Praha 1",
+  "src0": "familywall",
+  "start": "18:00",
+  "title": "Dune (with Jo and Quinn)",
+  "who": [
+   "Alex",
+   "Sam",
+   "Jo",
+   "Quinn"
+  ]
+ },
+ "events/fw1127995954": {
+  "allDay": false,
+  "at": 1793000000000,
+  "by": "Alex",
+  "date": "2026-11-27",
+  "end": "20:30",
+  "endDate": "2026-11-27",
+  "gId": "82ktci9pghb59rr6fbdteoq5ok",
+  "kind": "work",
+  "notes": "",
+  "place": "",
+  "src0": "familywall",
+  "start": "19:30",
+  "title": "Admin: renew website",
+  "who": [
+   "Alex"
+  ]
+ },
+ "events/fw1125441004": {
+  "allDay": false,
+  "at": 1793000000000,
+  "by": "Alex",
+  "date": "2026-11-05",
+  "end": "12:00",
+  "endDate": "2026-11-05",
+  "gId": "sn4a8jfej3u8jdr5sg25jcebfs",
+  "kind": "doctor",
+  "notes": "",
+  "place": "",
+  "src0": "familywall",
+  "start": "10:30",
+  "title": "Appointment",
+  "who": [
+   "Alex"
+  ]
+ },
+ "events/fw1144355921": {
+  "allDay": false,
+  "at": 1793000000000,
+  "by": "Alex",
+  "date": "2026-11-05",
+  "end": "18:00",
+  "endDate": "2026-11-05",
+  "gId": "p1ujtsg95eq9et70ab5b7nglg0",
+  "kind": "other",
+  "notes": "",
+  "place": "",
+  "src0": "familywall",
+  "start": "16:00",
+  "title": "Coffee",
+  "who": [
+   "Alex"
+  ]
+ },
+ "events/fw980663804": {
+  "allDay": false,
+  "at": 1793000000000,
+  "by": "Alex",
+  "date": "2027-06-06",
+  "end": "19:30",
+  "endDate": "2027-06-06",
+  "gId": "ac2oa3fd7pje0rla3348or2jl0",
+  "kind": "family",
+  "notes": "",
+  "place": "",
+  "src0": "familywall",
+  "start": "15:30",
+  "title": "Concert",
+  "who": []
+ },
+ "events/fw1128963866": {
+  "allDay": false,
+  "at": 1793000000000,
+  "by": "Alex",
+  "date": "2026-11-23",
+  "end": "10:00",
+  "endDate": "2026-11-23",
+  "gId": "q1krgvko32depg67l2t83lp8ho",
+  "kind": "doctor",
+  "notes": "",
+  "place": "",
+  "src0": "familywall",
+  "start": "09:00",
+  "title": "Check-up",
+  "who": [
+   "Alex"
+  ]
+ },
+ "events/fw1058327269": {
+  "allDay": false,
+  "at": 1793000000000,
+  "by": "Alex",
+  "date": "2026-11-03",
+  "end": "16:25",
+  "endDate": "2026-11-03",
+  "gId": "q43k318urek462qr1e97s84al4",
+  "kind": "doctor",
+  "notes": "",
+  "place": "",
+  "src0": "familywall",
+  "start": "15:25",
+  "title": "Check-up",
+  "who": [
+   "Sam"
+  ]
+ },
+ "events/fw1091490905": {
+  "allDay": false,
+  "at": 1793000000000,
+  "by": "Alex",
+  "date": "2027-01-30",
+  "end": "07:00",
+  "endDate": "2027-01-31",
+  "gId": "s7bt9c0uqq7g02sr1l0ennlj18",
+  "kind": "family",
+  "notes": "",
+  "place": "",
+  "src0": "familywall",
+  "start": "18:00",
+  "title": "Date",
+  "who": [
+   "Alex",
+   "Sam"
+  ]
+ },
+ "events/fw1138179901": {
+  "allDay": false,
+  "at": 1793000000000,
+  "by": "Alex",
+  "date": "2026-11-06",
+  "end": "20:00",
+  "endDate": "2026-11-06",
+  "gId": "n723re5itd5pgtua05e4p5ifs8",
+  "kind": "other",
+  "notes": "",
+  "place": "",
+  "src0": "familywall",
+  "start": "12:00",
+  "title": "Visit",
+  "who": [
+   "Alex"
+  ]
+ },
+ "home/rhythms": {
+  "monthly": [
+   {
+    "id": "mo1",
+    "month": 0,
+    "text": "Sort outgrown kids' clothes into a donate bag"
+   },
+   {
+    "id": "mo14",
+    "month": 0,
+    "text": "Attic: one box out the door"
+   },
+   {
+    "id": "mo2",
+    "month": 1,
+    "text": "Clean inside the fridge and check the pantry"
+   },
+   {
+    "id": "mo17",
+    "month": 1,
+    "text": "Pip: deep clean the tank (or refresh a bioactive setup)"
+   },
+   {
+    "id": "mo3",
+    "month": 2,
+    "text": "Garden: one spring clearing session, with help if possible"
+   },
+   {
+    "id": "mo4",
+    "month": 3,
+    "text": "Swap seasonal clothes via the attic"
+   },
+   {
+    "id": "mo15",
+    "month": 3,
+    "text": "Cats: yearly vet check-up and vaccinations for Milo and Oscar"
+   },
+   {
+    "id": "mo5",
+    "month": 4,
+    "text": "Clean out kitchen cabinets"
+   },
+   {
+    "id": "mo18",
+    "month": 4,
+    "text": "Pip: summer heat plan, keep the tank below about 28 °C and out of the sun"
+   },
+   {
+    "id": "mo6",
+    "month": 5,
+    "text": "Wash the bins and the compost bucket"
+   },
+   {
+    "id": "mo7",
+    "month": 6,
+    "text": "Purge broken toys from the playroom"
+   },
+   {
+    "id": "mo8",
+    "month": 7,
+    "text": "Descale kettle and washing machine"
+   },
+   {
+    "id": "mo19",
+    "month": 7,
+    "text": "Pip: deep clean the tank (or refresh a bioactive setup)"
+   },
+   {
+    "id": "mo9",
+    "month": 8,
+    "text": "Swap seasonal clothes and check the girls' shoe sizes"
+   },
+   {
+    "id": "mo13",
+    "month": 8,
+    "text": "Technical room: boiler service or check"
+   },
+   {
+    "id": "mo10",
+    "month": 9,
+    "text": "Chimney sweep and fireplace check before fire season"
+   },
+   {
+    "id": "mo16",
+    "month": 9,
+    "text": "Cats: wash Milo and Oscar's beds and blankets, replace worn scratchers"
+   },
+   {
+    "id": "mo11",
+    "month": 10,
+    "text": "Clear gutters after the leaves fall; leaves onto the compost"
+   },
+   {
+    "id": "mo12",
+    "month": 11,
+    "text": "Check smoke alarms and the first-aid kit"
+   },
+   {
+    "id": "y2-tyres-w",
+    "month": 9,
+    "text": "Winter tyres on both cars before November"
+   },
+   {
+    "id": "y2-washer",
+    "month": 9,
+    "text": "Winter washer fluid in both cars"
+   },
+   {
+    "id": "y2-radiators",
+    "month": 9,
+    "text": "Bleed the radiators as the heating starts"
+   },
+   {
+    "id": "y2-garden-in",
+    "month": 9,
+    "text": "Garden furniture, sandpit cover and outdoor toys in for winter"
+   },
+   {
+    "id": "y2-mikulas",
+    "month": 10,
+    "text": "Mikuláš (5 December): plan the evening and the little parcels"
+   },
+   {
+    "id": "y2-advent",
+    "month": 10,
+    "text": "Advent wreath and calendars ready for the first Sunday of Advent"
+   },
+   {
+    "id": "y2-xmas",
+    "month": 11,
+    "text": "Christmas: tree, a little cukroví, the presents list (good enough is perfect)"
+   },
+   {
+    "id": "y2-xmas-away",
+    "month": 0,
+    "text": "Christmas things back to the attic after 6 January"
+   },
+   {
+    "id": "y2-easter",
+    "month": 2,
+    "text": "Easter: eggs to dye, a pomlázka for the girls"
+   },
+   {
+    "id": "y2-tyres-s",
+    "month": 3,
+    "text": "Summer tyres back on both cars"
+   },
+   {
+    "id": "y2-garden-out",
+    "month": 3,
+    "text": "Garden furniture and sandpit out; sun cream into the outing bag"
+   },
+   {
+    "id": "y2-ticks",
+    "month": 3,
+    "text": "Tick season starts: tick checks are on until October.",
+    "note": true
+   },
+   {
+    "id": "y2-zoe-bd",
+    "month": 4,
+    "text": "Zoe’s birthday (9 February): a small plan for the day"
+   },
+   {
+    "id": "y2-mia-bd",
+    "month": 7,
+    "text": "Mia’s birthday (12 April): a small plan for the day"
+   },
+   {
+    "id": "y2-kg-year",
+    "month": 7,
+    "text": "New kindergarten year: forms, fees and fresh spare clothes for September"
+   }
+  ],
+  "weekly": [
+   {
+    "day": 0,
+    "id": "w1",
+    "text": "Laundry, round one: everything, cold wash, no sorting",
+    "min": 20
+   },
+   {
+    "day": 2,
+    "id": "w8",
+    "text": "Compost bucket to the heap",
+    "min": 5
+   },
+   {
+    "day": 2,
+    "id": "w11",
+    "text": "Cats: wash Milo and Oscar's bowls, clean or refill the water fountain",
+    "min": 5,
+    "glass": true
+   },
+   {
+    "day": 3,
+    "id": "w3",
+    "text": "Wash the grown-ups' sheets",
+    "min": 10
+   },
+   {
+    "day": 4,
+    "id": "w6",
+    "text": "Wash the girls' bedding and soft toys of the week",
+    "min": 10
+   },
+   {
+    "day": 5,
+    "id": "w12",
+    "text": "Cats: full litter change and rinse the boxes",
+    "min": 15,
+    "glass": true
+   },
+   {
+    "day": 5,
+    "id": "w4",
+    "text": "Sweep a path through the ground floor",
+    "min": 10
+   },
+   {
+    "day": 5,
+    "id": "w9",
+    "text": "Garden: 20 minutes, one job, then stop",
+    "min": 20,
+    "months": [
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10
+    ]
+   },
+   {
+    "day": 6,
+    "id": "w5",
+    "text": "Fridge check and week plan in Mealtime",
+    "min": 15
+   },
+   {
+    "day": 6,
+    "id": "w13",
+    "text": "Cats: brush Milo and Oscar; trim claws every other week",
+    "min": 10
+   },
+   {
+    "day": 6,
+    "id": "w17",
+    "text": "Pip: spot-clean, fresh water dish, check toes and tail for stuck shed",
+    "min": 5,
+    "glass": true
+   },
+   {
+    "day": 6,
+    "id": "w7",
+    "text": "Toy rotation: swap one box from the attic",
+    "min": 10
+   },
+   {
+    "id": "w2-laundry2",
+    "text": "Laundry, round two",
+    "day": 5,
+    "min": 20,
+    "owner": "Sam"
+   },
+   {
+    "id": "w2-paper",
+    "text": "Paper basket: kindergarten letters, bills and forms",
+    "day": 6,
+    "min": 10
+   },
+   {
+    "id": "w2-kitchen",
+    "text": "Kitchen: wipe the hob, microwave and sink",
+    "day": 2,
+    "min": 10
+   },
+   {
+    "id": "w2-fire",
+    "text": "Fireplace: ash out, firewood basket filled",
+    "day": 5,
+    "min": 10,
+    "months": [
+     9,
+     10,
+     11,
+     0,
+     1,
+     2
+    ]
+   },
+   {
+    "id": "w2-winterkit",
+    "text": "Girls’ winter things dry and still fitting: mittens, hats, boots",
+    "day": 0,
+    "min": 5,
+    "months": [
+     10,
+     11,
+     0,
+     1,
+     2
+    ]
+   }
+  ],
+  "every": [
+   {
+    "id": "e2-vac-cats",
+    "text": "Vacuum where the cats sleep, and the stairs",
+    "every": 4,
+    "min": 15
+   },
+   {
+    "id": "e2-vac-up",
+    "text": "Vacuum the playroom and the girls’ bedroom",
+    "every": 7,
+    "min": 15
+   },
+   {
+    "id": "e2-bath",
+    "text": "Bathroom: sink, tub and toilet, two wipes and done",
+    "every": 7,
+    "min": 10
+   },
+   {
+    "id": "e2-wc-up",
+    "text": "Upstairs toilet: quick clean",
+    "every": 7,
+    "min": 5
+   },
+   {
+    "id": "e2-wc-down",
+    "text": "Downstairs toilet: quick clean",
+    "every": 7,
+    "min": 5
+   },
+   {
+    "id": "e2-mop",
+    "text": "Mop the kitchen and dining floor",
+    "every": 10,
+    "min": 15
+   },
+   {
+    "id": "e2-towels",
+    "text": "Fresh kitchen towels and dishcloth",
+    "every": 3,
+    "min": 2
+   },
+   {
+    "id": "e2-car1",
+    "text": "Duster: rubbish out, crumbs off the car seats",
+    "every": 14,
+    "min": 10
+   },
+   {
+    "id": "e2-car2",
+    "text": "Getz: rubbish out",
+    "every": 21,
+    "min": 5
+   },
+   {
+    "id": "e2-hood",
+    "text": "Cooker hood: wash the grease filter",
+    "every": 90,
+    "min": 10
+   },
+   {
+    "id": "e2-ticks",
+    "text": "Tick check for the girls after the garden or forest",
+    "every": 1,
+    "min": 2,
+    "months": [
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9
+    ]
+   }
+  ],
+  "everyMonth": [
+   {
+    "id": "m2-wm",
+    "text": "Washing machine: clean the filter, run an empty hot wash",
+    "min": 20
+   },
+   {
+    "id": "m2-dw",
+    "text": "Dishwasher: rinse the filter",
+    "min": 5
+   },
+   {
+    "id": "m2-fridge",
+    "text": "Fridge: old things out, one shelf wiped",
+    "min": 15
+   },
+   {
+    "id": "m2-money",
+    "text": "Money check-in together: bills paid, what’s coming next month",
+    "min": 20,
+    "owner": "both"
+   },
+   {
+    "id": "m2-meds",
+    "text": "Medicine box: anything out of date or running low?",
+    "min": 10
+   },
+   {
+    "id": "m2-cats",
+    "text": "Cats: flea and worm treatment if it’s due (check the packet)",
+    "min": 5
+   }
+  ],
+  "v": 2
+ },
+ "home/calendar": {
+  "calId": "f55761b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f90@group.calendar.google.com",
+  "calName": "Us, Rivera family",
+  "gpId": "d5d98d7c6b5a49382716a5b4c3d2e1f00f9e8d7c6b5a49382716a5b4c3d2e1f0@group.calendar.google.com",
+  "gpName": "Mia & Zoe"
+ },
+ "home/week": {
+  "evenings": {
+   "0": {
+    "type": "away",
+    "who": "Sam"
+   },
+   "1": {
+    "type": "away",
+    "who": "Sam"
+   },
+   "2": {
+    "type": "date"
+   },
+   "3": {
+    "type": "away",
+    "who": "Alex"
+   },
+   "4": {
+    "type": "away",
+    "who": "Alex"
+   }
+  },
+  "kidPick": {
+   "Mia": "15:45",
+   "Zoe": "11:45"
+  },
+  "kidPlace": {
+   "Mia": "Sunnyfield Kindergarten",
+   "Zoe": "Sunflower Playgroup, Riverton"
+  }
+ },
+ "home/profiles": {
+  "people": {
+   "Alex": {
+    "color": "#33B679"
+   },
+   "Sam": {
+    "color": "#8E24AA"
+   },
+   "Mia": {
+    "birthday": "2022-04-12",
+    "color": "#F6BF26"
+   },
+   "Zoe": {
+    "birthday": "2024-02-09",
+    "color": "#E67C73"
+   }
+  },
+  "friends": [
+   {
+    "color": "#0B8043",
+    "id": "fr_jo",
+    "name": "Jo",
+    "rel": "Sam's girlfriend",
+    "email": "jo@example.com",
+    "type": "partner",
+    "linked": [
+     "Sam"
+    ],
+    "birthday": "1995-03-05",
+    "canSit": true
+   },
+   {
+    "color": "#3F51B5",
+    "id": "fr_robin",
+    "name": "Robin",
+    "rel": "Alex's partner / it's complicated / good friend",
+    "type": "complicated",
+    "linked": [
+     "Alex"
+    ]
+   },
+   {
+    "color": "#F4511E",
+    "id": "fr_quinn",
+    "name": "Quinn",
+    "rel": "Jo's girlfriend",
+    "type": "metamour"
+   }
+  ]
+ },
+ "home/priorities": {
+  "items": [
+   {
+    "effort": 1,
+    "id": "p1",
+    "impact": 3,
+    "text": "Taking meds"
+   },
+   {
+    "effort": 2,
+    "id": "p2",
+    "impact": 3,
+    "text": "Showering"
+   },
+   {
+    "effort": 2,
+    "id": "p3",
+    "impact": 3,
+    "text": "Clean dishes for the day"
+   },
+   {
+    "effort": 1,
+    "id": "p4",
+    "impact": 2,
+    "text": "Rest"
+   },
+   {
+    "effort": 2,
+    "id": "p5",
+    "impact": 2,
+    "text": "Seeing friends"
+   },
+   {
+    "effort": 3,
+    "id": "p6",
+    "impact": 2,
+    "text": "Exercise"
+   },
+   {
+    "effort": 1,
+    "id": "p7",
+    "impact": 1,
+    "text": "Laying out tomorrow's clothes"
+   },
+   {
+    "effort": 2,
+    "id": "p8",
+    "impact": 1,
+    "text": "Folding laundry"
+   },
+   {
+    "effort": 3,
+    "id": "p9",
+    "impact": 1,
+    "text": "Mopping floors"
+   }
+  ]
+ },
+ "home/spaces": {
+  "spaces": [
+   {
+    "floor": "attic",
+    "id": "a1",
+    "name": "Attic storage",
+    "note": "A one-way street for stuff. Only a few times a year.",
+    "tasks": [
+     {
+      "id": "a1t1",
+      "text": "Boxes labelled, even with masking tape"
+     },
+     {
+      "id": "a1t2",
+      "text": "A clear path to the seasonal boxes"
+     },
+     {
+      "id": "a1t3",
+      "text": "One donate box ready by the stairs"
+     }
+    ]
+   },
+   {
+    "floor": "first",
+    "id": "f1",
+    "name": "Girls' bedroom",
+    "tasks": [
+     {
+      "id": "f1t2",
+      "text": "Clothes into the basket"
+     },
+     {
+      "id": "f1t3",
+      "text": "Bedding changed after accidents"
+     },
+     {
+      "id": "f1t4",
+      "text": "Floor clear for night-time walks"
+     },
+     {
+      "id": "crsolrl",
+      "text": "Trash out"
+     }
+    ]
+   },
+   {
+    "floor": "first",
+    "id": "f2",
+    "name": "Playroom",
+    "note": "Mess here is play happening, not a failure.",
+    "tasks": [
+     {
+      "id": "f2t1",
+      "text": "Toys into bins, no sorting"
+     },
+     {
+      "id": "f2t2",
+      "text": "Cups and snack bowls out"
+     },
+     {
+      "id": "f2t3",
+      "text": "Small-parts toys out of the 2-year-old's reach"
+     }
+    ]
+   },
+   {
+    "floor": "first",
+    "id": "f3",
+    "name": "Bathroom",
+    "tasks": [
+     {
+      "id": "f3t1",
+      "text": "Fresh towels"
+     },
+     {
+      "id": "f3t2",
+      "text": "Bath toys out to dry"
+     },
+     {
+      "id": "f3t3",
+      "text": "Quick wipe of the tub and sink"
+     },
+     {
+      "id": "f3t4",
+      "text": "Trash out"
+     }
+    ]
+   },
+   {
+    "floor": "first",
+    "id": "f4",
+    "name": "Master bedroom",
+    "tasks": [
+     {
+      "id": "f4t1",
+      "text": "Cups and dishes out"
+     },
+     {
+      "id": "f4t2",
+      "text": "Sheets changed"
+     },
+     {
+      "id": "f4t3",
+      "text": "Clothes into the basket or back with the clean ones"
+     }
+    ]
+   },
+   {
+    "floor": "first",
+    "id": "f5",
+    "name": "Alex's office",
+    "note": "Alex decides what tidy means here.",
+    "tasks": [
+     {
+      "id": "f5t1",
+      "text": "Cups out"
+     },
+     {
+      "id": "f5t2",
+      "text": "Papers into one tray"
+     },
+     {
+      "id": "f5t3",
+      "text": "Desk clear enough to work"
+     }
+    ]
+   },
+   {
+    "floor": "first",
+    "id": "f6",
+    "name": "Upstairs toilet",
+    "tasks": [
+     {
+      "id": "f6t1",
+      "text": "Toilet paper stocked"
+     },
+     {
+      "id": "f6t2",
+      "text": "Quick toilet clean"
+     },
+     {
+      "id": "f6t3",
+      "text": "Hand towel swapped"
+     }
+    ]
+   },
+   {
+    "floor": "ground",
+    "id": "g1",
+    "name": "Entry hallway",
+    "note": "The launch pad: keys, bags and shoes live here.",
+    "tasks": [
+     {
+      "id": "g1t1",
+      "text": "Shoes into the basket"
+     },
+     {
+      "id": "g1t2",
+      "text": "Kindergarten bag and keys on their hooks"
+     },
+     {
+      "id": "g1t3",
+      "text": "Mail into one tray"
+     }
+    ]
+   },
+   {
+    "floor": "ground",
+    "id": "g2",
+    "name": "Kitchen & dining",
+    "tasks": [
+     {
+      "id": "g2t1",
+      "text": "Enough clean dishes and sippy cups for the day"
+     },
+     {
+      "id": "g2t2",
+      "text": "Counter space clear to cook"
+     },
+     {
+      "id": "g2t3",
+      "text": "Table wiped after meals"
+     },
+     {
+      "id": "g2t4",
+      "text": "Trash and compost bucket emptied"
+     }
+    ]
+   },
+   {
+    "floor": "ground",
+    "id": "g3",
+    "name": "Living room",
+    "tasks": [
+     {
+      "id": "g3t1",
+      "text": "Five things sweep"
+     },
+     {
+      "id": "g3t2",
+      "text": "Blankets into a basket"
+     },
+     {
+      "id": "g3t3",
+      "text": "Fireplace: ash out and guard in place when in use"
+     }
+    ]
+   },
+   {
+    "floor": "ground",
+    "id": "g4",
+    "name": "Pantry",
+    "tasks": [
+     {
+      "id": "g4t1",
+      "text": "Running-low items onto Nákupy"
+     },
+     {
+      "id": "g4t2",
+      "text": "Anything open and old thrown out"
+     }
+    ]
+   },
+   {
+    "floor": "ground",
+    "id": "g5",
+    "name": "Laundry room & toilet",
+    "tasks": [
+     {
+      "id": "g5t1",
+      "text": "Washer emptied, nothing left to go musty"
+     },
+     {
+      "id": "g5t2",
+      "text": "Clean clothes into family baskets"
+     },
+     {
+      "id": "g5t3",
+      "text": "Quick toilet clean, paper stocked"
+     }
+    ]
+   },
+   {
+    "floor": "ground",
+    "id": "g6",
+    "name": "Sam's office",
+    "note": "Sam decides what tidy means here.",
+    "tasks": [
+     {
+      "id": "g6t1",
+      "text": "Cups out"
+     },
+     {
+      "id": "g6t2",
+      "text": "Desk clear enough to work"
+     }
+    ]
+   },
+   {
+    "floor": "ground",
+    "id": "g7",
+    "name": "Technical room & storage",
+    "tasks": [
+     {
+      "id": "g7t1",
+      "text": "Path to the boiler and fuse box clear"
+     },
+     {
+      "id": "g7t2",
+      "text": "Cleaning supplies up high, away from the girls"
+     }
+    ]
+   },
+   {
+    "floor": "ground",
+    "id": "g8",
+    "name": "Garage gym",
+    "tasks": [
+     {
+      "id": "g8t1",
+      "text": "Weights back on the rack"
+     },
+     {
+      "id": "g8t2",
+      "text": "Floor clear"
+     },
+     {
+      "id": "g8t3",
+      "text": "Girls kept out or the equipment made safe"
+     }
+    ]
+   },
+   {
+    "floor": "ground",
+    "id": "g9",
+    "name": "Milo & Oscar's corner",
+    "note": "Two brothers: Milo the tuxedo and Oscar the all-black. As male cats, keep an eye on their peeing: straining in the litter box with little or no urine needs a vet straight away.",
+    "tasks": [
+     {
+      "id": "g9t1",
+      "text": "Litter boxes scooped, litter topped up"
+     },
+     {
+      "id": "g9t2",
+      "text": "Bowls clean, water fresh"
+     },
+     {
+      "id": "g9t3",
+      "text": "Hair rolled off their favourite spots and beds"
+     },
+     {
+      "id": "g9t4",
+      "text": "Cat toys with strings put away from Zoe"
+     }
+    ]
+   },
+   {
+    "floor": "ground",
+    "id": "g10",
+    "name": "Pip's tank",
+    "note": "Pip is a crested gecko: happy at normal room temperature but struggles above about 28 °C, so keep the tank out of direct sun. Powdered diet only, no live insects. Lid always latched: Milo and Oscar are curious.",
+    "tasks": [
+     {
+      "id": "g10t1",
+      "text": "Misted in the evening"
+     },
+     {
+      "id": "g10t2",
+      "text": "Fresh food Tue, Thu, Sat; old food out"
+     },
+     {
+      "id": "g10t3",
+      "text": "Water dish clean"
+     },
+     {
+      "id": "g10t4",
+      "text": "Droppings spot-cleaned"
+     }
+    ]
+   },
+   {
+    "floor": "garden",
+    "id": "o1",
+    "name": "Garden",
+    "note": "Mostly unkept, and that's allowed. Aim for safe and usable, not tidy.",
+    "tasks": [
+     {
+      "id": "o1t1",
+      "text": "Toys in before rain"
+     },
+     {
+      "id": "o1t2",
+      "text": "Paths walkable, nothing to trip on"
+     },
+     {
+      "id": "o1t3",
+      "text": "Fallen branches checked after storms"
+     }
+    ]
+   },
+   {
+    "floor": "garden",
+    "id": "o2",
+    "name": "Compost",
+    "tasks": [
+     {
+      "id": "o2t1",
+      "text": "Kitchen bucket emptied onto the heap"
+     },
+     {
+      "id": "o2t2",
+      "text": "Leaves and garden cuttings go here too"
+     }
+    ]
+   },
+   {
+    "floor": "garden",
+    "id": "o3",
+    "name": "Garden shed",
+    "note": "Open walls, so keep only what can handle weather.",
+    "tasks": [
+     {
+      "id": "o3t1",
+      "text": "Tools hung up, sharp ones out of reach"
+     },
+     {
+      "id": "o3t2",
+      "text": "Anything rusting or rotting thrown out"
+     }
+    ]
+   }
+  ]
+ },
+ "home/live": {
+  "task": "",
+  "until": 0,
+  "who": ""
+ },
+ "home/sick": {
+  "active": false,
+  "doses": [],
+  "meds": [],
+  "temps": []
+ },
+ "home/contacts": {
+  "list": [
+   {
+    "email": "clinic@example.com",
+    "group": "Health",
+    "id": "ct1",
+    "name": "Dr. Jane Meadows",
+    "note": "Clinic Road 8, Praha 3. Sick children: Mon 11–13, Tue 8–10:30, Wed 13–16, Thu 11–13, Fri 7:30–10",
+    "phone": "555 010 101",
+    "role": "Paediatrician, Riverside Paediatrics"
+   },
+   {
+    "email": "info@standin-clinic.example.com",
+    "group": "Health",
+    "id": "ct2",
+    "name": "Dr. Anna Brook",
+    "phone": "555 010 102",
+    "role": "Stand-in paediatrician when Dr. Meadows is on holiday"
+   },
+   {
+    "group": "Health",
+    "id": "ct3",
+    "name": "City Children’s Hospital – emergency",
+    "note": "Hospital Road 1, Praha 4. Weekdays 19:00–6:30, weekends and holidays non-stop",
+    "phone": "555 010 103",
+    "role": "Children's emergency, after hours"
+   },
+   {
+    "group": "Health",
+    "id": "ct4",
+    "name": "Ambulance / emergency",
+    "note": "General emergency: 112",
+    "phone": "155"
+   }
+  ]
+ },
+ "home/lists": {
+  "care": [
+   {
+    "group": 0,
+    "id": "sc1",
+    "text": "Brush teeth",
+    "tip": "Two minutes. A pre-pasted toothbrush anywhere in the house counts."
+   },
+   {
+    "group": 0,
+    "id": "sc2",
+    "text": "Morning meds",
+    "time": "09:00"
+   },
+   {
+    "group": 0,
+    "id": "sc3",
+    "text": "Get dressed",
+    "tip": "Clean-ish counts."
+   },
+   {
+    "group": 1,
+    "id": "sc4",
+    "text": "Breakfast",
+    "time": "09:30",
+    "tip": "Anything counts: a banana, yoghurt, the girls' leftover toast."
+   },
+   {
+    "group": 1,
+    "id": "sc5",
+    "text": "Lunch",
+    "time": "13:00",
+    "tip": "Hyperfocus hides hunger. Eat even if you don't feel it."
+   },
+   {
+    "group": 1,
+    "id": "sc6",
+    "text": "Afternoon snack",
+    "time": "16:00",
+    "tip": "Some protein softens the late-afternoon crash."
+   },
+   {
+    "group": 1,
+    "id": "sc7",
+    "text": "Dinner",
+    "time": "19:30"
+   },
+   {
+    "group": 2,
+    "id": "sc8",
+    "text": "Daylight: step outside for 10 minutes",
+    "tip": "Garden, balcony, walk to kindergarten: all count."
+   },
+   {
+    "group": 2,
+    "id": "sc9",
+    "text": "Move your body for 5 minutes",
+    "tip": "Dance with the girls counts double in spirit."
+   },
+   {
+    "group": 2,
+    "id": "sc10",
+    "text": "Screen break: stand, stretch, toilet",
+    "tip": "The toilet break hyperfocus keeps postponing."
+   },
+   {
+    "group": 2,
+    "id": "sc11",
+    "text": "5 minutes of something just for you"
+   },
+   {
+    "group": 3,
+    "id": "sc12",
+    "text": "Brush teeth",
+    "tip": "Even a rinse and floss pick beats skipping."
+   },
+   {
+    "group": 3,
+    "id": "sc13",
+    "text": "Evening meds"
+   },
+   {
+    "group": 3,
+    "id": "sc14",
+    "text": "Wash face or shower",
+    "tip": "A wipe-down counts."
+   },
+   {
+    "group": 3,
+    "id": "sc15",
+    "text": "Phone away, in bed by bedtime",
+    "time": "23:30",
+    "tip": "Revenge bedtime procrastination is real; tomorrow-you pays for it."
+   },
+   {
+    "id": "care-clean",
+    "text": "Clean one thing",
+    "group": 2,
+    "kind": "clean",
+    "tip": "One job from today’s rhythm is plenty."
+   }
+  ],
+  "closing": [
+   {
+    "done": "it's humming; unloading is optional",
+    "id": "c1",
+    "min": 5,
+    "text": "Load and run the dishwasher"
+   },
+   {
+    "done": "none left in the bag or on the floor",
+    "id": "c7",
+    "min": 2,
+    "text": "Sippy cups and snack boxes into the dishwasher"
+   },
+   {
+    "done": "nothing that can spoil is out",
+    "id": "c2",
+    "min": 2,
+    "text": "Food waste and wrappers into the bin"
+   },
+   {
+    "done": "no clumps left in either box",
+    "id": "c9",
+    "min": 3,
+    "text": "Scoop the litter boxes"
+   },
+   {
+    "id": "c10",
+    "min": 2,
+    "text": "Milo and Oscar: evening food and fresh water"
+   },
+   {
+    "done": "the glass has fresh droplets, lid closed",
+    "id": "c11",
+    "min": 2,
+    "text": "Pip: evening mist"
+   },
+   {
+    "done": "the floor is walkable in the dark",
+    "id": "c6",
+    "min": 5,
+    "text": "Toy sweep: everything into one bin, no sorting"
+   },
+   {
+    "done": "bag by the door, two outfits on the chair",
+    "id": "c8",
+    "min": 5,
+    "text": "Kindergarten bag packed and girls' clothes laid out"
+   },
+   {
+    "done": "one clear patch, nothing more",
+    "id": "c3",
+    "min": 3,
+    "text": "Clear one counter for breakfast"
+   },
+   {
+    "id": "c5",
+    "min": 2,
+    "text": "Set up tomorrow's coffee"
+   },
+   {
+    "id": "c4",
+    "min": 1,
+    "text": "Evening meds"
+   }
+  ],
+  "date": [
+   {
+    "id": "d1",
+    "text": "Girls' bedtime things ready for whoever is watching them"
+   },
+   {
+    "id": "d2",
+    "text": "Phones charged, sitter knows how to reach you"
+   }
+  ],
+  "glass": [
+   {
+    "id": "g1",
+    "text": "The girls eat something and drink water"
+   },
+   {
+    "id": "g2",
+    "text": "Teeth brushed or not, into bed"
+   },
+   {
+    "id": "g3",
+    "text": "Meds taken"
+   },
+   {
+    "id": "g6",
+    "text": "Milo and Oscar have food, water and a usable litter box"
+   },
+   {
+    "id": "g7",
+    "text": "Pip's tank isn't too hot and has water"
+   },
+   {
+    "id": "g5",
+    "text": "Grown-ups eat something too"
+   },
+   {
+    "id": "g4",
+    "text": "We check in with each other"
+   }
+  ],
+  "restock": [
+   {
+    "id": "k1",
+    "shop": "Toaletní papír",
+    "text": "Toilet paper in every bathroom"
+   },
+   {
+    "id": "k7",
+    "shop": "Svačiny pro holky",
+    "text": "Snack bag for outings refilled"
+   },
+   {
+    "id": "k8",
+    "shop": "Krmivo pro kočky",
+    "text": "Cat food: at least a few days left"
+   },
+   {
+    "id": "k9",
+    "shop": "Stelivo",
+    "text": "Cat litter: a spare bag in reserve"
+   },
+   {
+    "id": "k10",
+    "shop": "Krmivo pro gekona",
+    "text": "Pip's diet powder: enough for two weeks"
+   },
+   {
+    "id": "k2",
+    "text": "Clean dish towels to the kitchen"
+   },
+   {
+    "id": "k3",
+    "shop": "Mýdlo",
+    "text": "Refill hand and dish soap"
+   },
+   {
+    "id": "k4",
+    "text": "Fresh hand towels"
+   },
+   {
+    "id": "k5",
+    "shop": "Pytle na odpadky",
+    "text": "New bags in every bin"
+   },
+   {
+    "id": "k11",
+    "text": "Wipes and tissues: car, outing bag, changing spots",
+    "shop": "Vlhčené ubrousky"
+   },
+   {
+    "id": "k12",
+    "text": "Firewood basket and kindling by the fireplace",
+    "shop": "Podpalovač",
+    "months": [
+     9,
+     10,
+     11,
+     0,
+     1,
+     2
+    ]
+   }
+  ],
+  "restockDay": 6,
+  "sick": [
+   {
+    "id": "x1",
+    "min": 3,
+    "text": "Tell the kindergarten, and work: one message each"
+   },
+   {
+    "id": "x2",
+    "min": 5,
+    "text": "One basket: water, tissues, thermometer, medicines, bucket"
+   },
+   {
+    "id": "x3",
+    "min": 3,
+    "text": "Spare sheets and towels near her bed"
+   },
+   {
+    "id": "x4",
+    "text": "Easy food for her: toast, soup, yoghurt, anything she'll eat"
+   },
+   {
+    "id": "x5",
+    "text": "Screens are medicine today, no guilt"
+   },
+   {
+    "id": "x6",
+    "text": "Grown-ups eat and drink something too"
+   },
+   {
+    "id": "x7",
+    "text": "Swap who is on duty every few hours"
+   }
+  ],
+  "solo": [
+   {
+    "done": "tomorrow has cups and a bowl",
+    "id": "o1",
+    "min": 3,
+    "text": "Dishwasher on, or just the sippy cups"
+   },
+   {
+    "done": "nothing that can spoil is out",
+    "id": "o2",
+    "min": 2,
+    "text": "Food waste into the bin"
+   },
+   {
+    "id": "o5",
+    "min": 5,
+    "text": "Pets: Milo and Oscar fed, litter scooped, Pip misted"
+   },
+   {
+    "id": "o3",
+    "min": 2,
+    "text": "Kindergarten bag by the door"
+   },
+   {
+    "id": "o4",
+    "min": 1,
+    "text": "Evening meds"
+   }
+  ],
+  "survival": [
+   {
+    "id": "s1",
+    "min": 3,
+    "text": "Wash only what tomorrow needs (cups, a bowl, a bottle)"
+   },
+   {
+    "id": "s2",
+    "min": 2,
+    "text": "Food waste in the bin so nothing spoils"
+   },
+   {
+    "id": "s4",
+    "min": 5,
+    "text": "Pets: scoop litter, food and water for Milo and Oscar, quick mist for Pip"
+   },
+   {
+    "id": "s3",
+    "min": 1,
+    "text": "Meds"
+   }
+  ],
+  "waterGoal": 8,
+  "girlsHome": [
+   {
+    "id": "gh1",
+    "text": "Let the kindergarten know they’re home, and roughly until when"
+   },
+   {
+    "id": "gh2",
+    "text": "Quick check: noses, temperature, mood",
+    "when": ""
+   },
+   {
+    "id": "gh3",
+    "text": "Tissues, saline spray and water bottles within reach"
+   },
+   {
+    "id": "gh4",
+    "text": "Rough shape of the day: outside time, quiet time, screens"
+   },
+   {
+    "id": "gh5",
+    "text": "Fresh air: garden or a short walk if they’re up for it"
+   },
+   {
+    "id": "gh6",
+    "text": "Easy lunch sorted (anything counts)"
+   },
+   {
+    "id": "gh7",
+    "text": "One small thing for you while they play"
+   }
+  ],
+  "cleanSeeded": "2026-11-05",
+  "supplies": [
+   {
+    "id": "sp-house-0",
+    "text": "Toaletní papír",
+    "group": "house"
+   },
+   {
+    "id": "sp-house-1",
+    "text": "Papírové kapesníky",
+    "group": "house"
+   },
+   {
+    "id": "sp-house-2",
+    "text": "Papírové utěrky",
+    "group": "house"
+   },
+   {
+    "id": "sp-house-3",
+    "text": "Pytle na odpadky",
+    "group": "house"
+   },
+   {
+    "id": "sp-house-4",
+    "text": "Mýdlo na ruce",
+    "group": "house"
+   },
+   {
+    "id": "sp-house-5",
+    "text": "Baterie AA a AAA",
+    "group": "house"
+   },
+   {
+    "id": "sp-house-6",
+    "text": "Žárovky",
+    "group": "house"
+   },
+   {
+    "id": "sp-kitchen-0",
+    "text": "Prostředek na nádobí",
+    "group": "kitchen"
+   },
+   {
+    "id": "sp-kitchen-1",
+    "text": "Tablety do myčky",
+    "group": "kitchen"
+   },
+   {
+    "id": "sp-kitchen-2",
+    "text": "Sůl do myčky",
+    "group": "kitchen"
+   },
+   {
+    "id": "sp-kitchen-3",
+    "text": "Leštidlo do myčky",
+    "group": "kitchen"
+   },
+   {
+    "id": "sp-kitchen-4",
+    "text": "Houbičky na nádobí",
+    "group": "kitchen"
+   },
+   {
+    "id": "sp-kitchen-5",
+    "text": "Pečicí papír",
+    "group": "kitchen"
+   },
+   {
+    "id": "sp-kitchen-6",
+    "text": "Alobal",
+    "group": "kitchen"
+   },
+   {
+    "id": "sp-kitchen-7",
+    "text": "Sáčky na svačiny a mražení",
+    "group": "kitchen"
+   },
+   {
+    "id": "sp-clean-0",
+    "text": "Prací prostředek",
+    "group": "clean"
+   },
+   {
+    "id": "sp-clean-1",
+    "text": "Odstraňovač skvrn",
+    "group": "clean"
+   },
+   {
+    "id": "sp-clean-2",
+    "text": "Čistič na WC",
+    "group": "clean"
+   },
+   {
+    "id": "sp-clean-3",
+    "text": "Univerzální čistič",
+    "group": "clean"
+   },
+   {
+    "id": "sp-clean-4",
+    "text": "Hadříky z mikrovlákna",
+    "group": "clean"
+   },
+   {
+    "id": "sp-clean-5",
+    "text": "Sáčky do vysavače",
+    "group": "clean"
+   },
+   {
+    "id": "sp-body-0",
+    "text": "Zubní pasta",
+    "group": "body"
+   },
+   {
+    "id": "sp-body-1",
+    "text": "Dětská zubní pasta",
+    "group": "body"
+   },
+   {
+    "id": "sp-body-2",
+    "text": "Zubní kartáčky",
+    "group": "body"
+   },
+   {
+    "id": "sp-body-3",
+    "text": "Šampon",
+    "group": "body"
+   },
+   {
+    "id": "sp-body-4",
+    "text": "Sprchový gel",
+    "group": "body"
+   },
+   {
+    "id": "sp-body-5",
+    "text": "Krém pro Zoe",
+    "group": "body"
+   },
+   {
+    "id": "sp-body-6",
+    "text": "Vlhčené ubrousky",
+    "group": "body"
+   },
+   {
+    "id": "sp-body-7",
+    "text": "Náplasti",
+    "group": "body"
+   },
+   {
+    "id": "sp-pets-0",
+    "text": "Krmivo pro kočky",
+    "group": "pets"
+   },
+   {
+    "id": "sp-pets-1",
+    "text": "Stelivo",
+    "group": "pets"
+   },
+   {
+    "id": "sp-pets-2",
+    "text": "Krmivo pro gekona",
+    "group": "pets"
+   },
+   {
+    "id": "sp-season-0",
+    "text": "Podpalovač",
+    "group": "season",
+    "months": [
+     9,
+     10,
+     11,
+     0,
+     1,
+     2
+    ]
+   },
+   {
+    "id": "sp-season-1",
+    "text": "Dřevo nebo brikety",
+    "group": "season",
+    "months": [
+     9,
+     10,
+     11,
+     0,
+     1,
+     2
+    ]
+   },
+   {
+    "id": "sp-season-2",
+    "text": "Zimní kapalina do ostřikovačů",
+    "group": "season",
+    "months": [
+     9,
+     10,
+     11,
+     0,
+     1,
+     2
+    ]
+   },
+   {
+    "id": "sp-season-3",
+    "text": "Opalovací krém",
+    "group": "season",
+    "months": [
+     3,
+     4,
+     5,
+     6,
+     7,
+     8
+    ]
+   },
+   {
+    "id": "sp-season-4",
+    "text": "Repelent proti klíšťatům",
+    "group": "season",
+    "months": [
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9
+    ]
+   }
+  ],
+  "supSeeded": 1,
+  "bedtime": [
+   {
+    "id": "bt1",
+    "text": "Dinner, before Večerníček if you can"
+   },
+   {
+    "id": "bt2",
+    "text": "Večerníček"
+   },
+   {
+    "id": "bt3",
+    "text": "Upstairs: help with teeth"
+   },
+   {
+    "id": "bt4",
+    "text": "Bath"
+   },
+   {
+    "id": "bt5",
+    "text": "Lotion for Zoe"
+   },
+   {
+    "id": "bt6",
+    "text": "Pyjamas"
+   },
+   {
+    "id": "bt7",
+    "text": "A story"
+   },
+   {
+    "id": "bt8",
+    "text": "Tomorrow’s weather, and lay out their clothes"
+   }
+  ]
+ },
+ "home/trello": {
+  "board": "ari:cloud:trello::board/workspace/6a1e92a361a3f00196409288/6a1e95197ada99f540b05502",
+  "boardUrl": "https://trello.com/b/M975NLBU/dom%C3%A1cnost",
+  "lists": {
+   "chores": "ari:cloud:trello::list/workspace/6a1e92a361a3f00196409288/6a1e953b3b05a925cdce19da",
+   "home": "ari:cloud:trello::list/workspace/6a1e92a361a3f00196409288/6a2d33b930f3f0c7a7a928ed",
+   "org": "ari:cloud:trello::list/workspace/6a1e92a361a3f00196409288/6a1e9574b399a97a0821e877",
+   "shop": "ari:cloud:trello::list/workspace/6a1e92a361a3f00196409288/6a1e9536c83a5bda7d76c525"
+  },
+  "people": {
+   "Alex": "ari:cloud:trello::list/workspace/6a1e92a361a3f00196409288/6a1ecad9edd2918150368e7a",
+   "Sam": "ari:cloud:trello::list/workspace/6a1e92a361a3f00196409288/6a255061383d51cda01faae1"
+  },
+  "shopIds": {
+   "food": "ari:cloud:trello::list/workspace/6a1e92a361a3f00196409288/6a1e953b3b05a925cdce19da",
+   "drug": "ari:cloud:trello::list/workspace/6a1e92a361a3f00196409288/6a1e9536c83a5bda7d76c525",
+   "med": "ari:cloud:trello::list/workspace/6a1e92a361a3f00196409288/6a1e9574b399a97a0821e877"
+  },
+  "shopNames": {
+   "food": "Nákup - Jídlo",
+   "drug": "Nákup - Drogerie",
+   "med": "Nákupy - Lékárna"
+  }
+ },
+ "home/house": {
+  "size": 190
+ },
+ "home/people": {
+  "people": {
+   "Alex": {
+    "evening": [
+     {
+      "id": "14imkrg",
+      "text": "Check tomorrow’s weather"
+     },
+     {
+      "id": "7ysh0jf",
+      "text": "Prepare the girls' clothes"
+     },
+     {
+      "id": "vn2k7h9",
+      "text": "Prepare kindergarten bags"
+     }
+    ],
+    "launch": [
+     {
+      "id": "al1",
+      "text": "Keys"
+     },
+     {
+      "id": "al2",
+      "text": "Phone"
+     },
+     {
+      "id": "al3",
+      "text": "Kindergarten bag"
+     },
+     {
+      "id": "i0jgu2g",
+      "text": "Glasses"
+     },
+     {
+      "id": "p05fd5g",
+      "text": "Water bottle"
+     }
+    ],
+    "leave": "07:40",
+    "morning": [
+     {
+      "id": "am1",
+      "text": "Girls up, dressed and fed"
+     },
+     {
+      "id": "am3",
+      "text": "Weather check for the girls' clothes"
+     },
+     {
+      "id": "am4",
+      "text": "Kindergarten bag and snacks"
+     }
+    ],
+    "setupDone": true,
+    "wake": "07:00",
+    "workdays": [
+     0,
+     1,
+     2,
+     3,
+     4
+    ],
+    "workStyle": "flex",
+    "dip": "14:00-17:00",
+    "readyEarly": 30
+   },
+   "Sam": {
+    "evening": [
+     {
+      "id": "me1",
+      "text": "Breakfast for tomorrow: pack it, or decide where to buy it"
+     },
+     {
+      "id": "me2",
+      "text": "Keys, phone and keycard together on the launch pad by the door"
+     },
+     {
+      "id": "me3",
+      "text": "Phone on the charger"
+     }
+    ],
+    "launch": [
+     {
+      "id": "ml1",
+      "text": "Keys"
+     },
+     {
+      "id": "ml2",
+      "text": "Phone"
+     },
+     {
+      "id": "ml3",
+      "text": "Keycard"
+     },
+     {
+      "id": "ml4",
+      "text": "Breakfast (or money to buy it)"
+     }
+    ],
+    "morning": [],
+    "setupDone": true,
+    "wake": "05:00",
+    "workdays": [
+     0,
+     1,
+     2,
+     3,
+     4
+    ],
+    "leave": "05:35",
+    "start": "07:00",
+    "back": "15:15"
+   }
+  }
+ },
+ "home/household": {
+  "afterHours": "City Children’s Hospital, children's emergency · Hospital Road 1, Praha 4 · 555 010 103 · weekdays 19:00–6:30, weekends and holidays non-stop",
+  "doctor": "Dr. Jane Meadows, Riverside Paediatrics · 555 010 101 · Clinic Road 8, Praha 3",
+  "doctorHours": "Mon 11:00–13:00 · Tue 8:00–10:30 · Wed 13:00–16:00 · Thu 11:00–13:00 · Fri 7:30–10:00",
+  "doctorUrl": "https://clinic.example.com/",
+  "kids": [
+   "Mia",
+   "Zoe"
+  ],
+  "members": [
+   {
+    "id": "m1",
+    "name": "Alex"
+   },
+   {
+    "id": "m2",
+    "name": "Sam"
+   }
+  ],
+  "evIdx": 1,
+  "address": "Meadow Lane 12, Sunnyfield",
+  "nap": {
+   "kid": "Zoe",
+   "from": "11:30",
+   "to": "14:00"
+  },
+  "baseline": 2
+ },
+ "home/rest": {
+  "sleepin": {},
+  "windows": []
+ },
+ "home/situation": {
+  "girlsHome": {
+   "from": "2026-10-23",
+   "until": "",
+   "reason": "cold"
+  }
+ },
+ "home/reminders": {
+  "list": [
+   {
+    "id": "3x8a7lv",
+    "date": "",
+    "live": false,
+    "src": "seed",
+    "text": "Feed Pip (powdered diet)",
+    "who": "both",
+    "at": "",
+    "days": [
+     1,
+     3,
+     5
+    ],
+    "home": true
+   },
+   {
+    "id": "rhy2hds",
+    "date": "",
+    "live": false,
+    "src": "seed",
+    "text": "Bins out for Monday morning",
+    "who": "both",
+    "at": "18:00",
+    "days": [
+     6
+    ],
+    "home": true
+   },
+   {
+    "id": "sr64lxj",
+    "date": "",
+    "live": false,
+    "src": "seed",
+    "text": "Five-minute pick-up with the girls: Mia puts toys in the bins, Zoe carries her cup",
+    "who": "both",
+    "at": "18:20",
+    "days": [],
+    "home": true
+   },
+   {
+    "id": "a8yzevs",
+    "text": "Breakfast first, then vitamins",
+    "who": "Alex",
+    "at": "09:00",
+    "days": [],
+    "date": "",
+    "home": false,
+    "live": true,
+    "src": "seed"
+   },
+   {
+    "id": "ryu6jp1",
+    "text": "Breakfast first, then vitamins",
+    "who": "Sam",
+    "at": "09:00",
+    "days": [],
+    "date": "",
+    "home": false,
+    "live": true,
+    "src": "seed"
+   }
+  ],
+  "migrated": 1,
+  "seeded": 1
+ },
+ "home/rlog": {
+  "e2-vac-cats": {
+   "last": "2026-11-04",
+   "prev": null
+  },
+  "e2-vac-up": {
+   "last": "2026-11-01",
+   "prev": null
+  },
+  "e2-bath": {
+   "last": "2026-10-30",
+   "prev": null
+  },
+  "e2-wc-up": {
+   "last": "2026-11-02",
+   "prev": null
+  },
+  "e2-wc-down": {
+   "last": "2026-10-31",
+   "prev": null
+  },
+  "e2-mop": {
+   "last": "2026-11-01",
+   "prev": null
+  },
+  "e2-towels": {
+   "last": "2026-11-03",
+   "prev": null
+  },
+  "e2-car1": {
+   "last": "2026-11-01",
+   "prev": null
+  },
+  "e2-car2": {
+   "last": "2026-10-24",
+   "prev": null
+  },
+  "e2-hood": {
+   "last": "2026-08-20",
+   "prev": null
+  },
+  "e2-ticks": {
+   "last": "2026-11-05",
+   "prev": null
+  }
+ },
+ "home/kits": {
+  "ready": {
+   "kids": [
+    {
+     "id": "r1",
+     "text": "Toilet for everyone, you too"
+    },
+    {
+     "id": "r2",
+     "text": "Shoes and jackets on"
+    },
+    {
+     "id": "r3",
+     "text": "Bags and water bottles by the door"
+    },
+    {
+     "id": "r4",
+     "text": "Into the car, seat belts on"
+    }
+   ],
+   "self": [
+    {
+     "id": "s1",
+     "text": "Shower or a quick wash"
+    },
+    {
+     "id": "s2",
+     "text": "Get dressed"
+    },
+    {
+     "id": "s3",
+     "text": "Bag packed"
+    },
+    {
+     "id": "s4",
+     "text": "Shoes on, out of the door"
+    }
+   ]
+  },
+  "travel": {
+   "sunnyfield-kindergarten": 5,
+   "sunflower-playgroup": 15,
+   "riverside-paediatrics": 40,
+   "clinic-road-8": 40,
+   "mountain-cottage": 95
+  },
+  "seeded": true
+ },
+ "home/focus": {
+  "areas": {
+   "uuaux0z": {
+    "id": "uuaux0z",
+    "owner": "Alex",
+    "order": 0,
+    "name": "Photo editing",
+    "match": "focení, foto, fotk, photo, edit, úprav, upravit, probrat, cull, lightroom, gig",
+    "need": [
+     {
+      "id": "6mwdp46",
+      "text": "Lightroom open on the right catalogue"
+     },
+     {
+      "id": "nx9prvj",
+      "text": "The card or drive with the photos plugged in"
+     },
+     {
+      "id": "xyn6ktk",
+      "text": "Headphones and something to listen to"
+     },
+     {
+      "id": "8etsso7",
+      "text": "Water and a snack"
+     },
+     {
+      "id": "9l6axjb",
+      "text": "Phone face down, out of reach"
+     }
+    ],
+    "links": []
+   },
+   "qwe1t43": {
+    "id": "qwe1t43",
+    "owner": "Alex",
+    "order": 1,
+    "name": "UX portfolio",
+    "match": "ux, ui, portfolio, figma, coursera, course, kurz, case study, design",
+    "need": [
+     {
+      "id": "lbcmuwh",
+      "text": "Figma open on the portfolio file"
+     },
+     {
+      "id": "8c24zte",
+      "text": "Course or project notes open"
+     },
+     {
+      "id": "n00g8dk",
+      "text": "Headphones"
+     },
+     {
+      "id": "d13m4c7",
+      "text": "Water"
+     },
+     {
+      "id": "xbfsevs",
+      "text": "Phone face down, out of reach"
+     }
+    ],
+    "links": [
+     {
+      "id": "6ba4vv7",
+      "text": "Figma",
+      "url": "https://www.figma.com/files"
+     },
+     {
+      "id": "1shjd9f",
+      "text": "Coursera",
+      "url": "https://www.coursera.org/"
+     }
+    ]
+   },
+   "oo9km0j": {
+    "id": "oo9km0j",
+    "owner": "Alex",
+    "order": 2,
+    "name": "Job search",
+    "match": "job, cv, životopis, práce, pohovor, interview, linkedin, application",
+    "need": [
+     {
+      "id": "3ky6wxq",
+      "text": "CV open"
+     },
+     {
+      "id": "ga8h88k",
+      "text": "The list of places you’ve applied to"
+     },
+     {
+      "id": "84xxtbb",
+      "text": "Water"
+     },
+     {
+      "id": "l4qld7z",
+      "text": "Phone nearby only if a call is due"
+     }
+    ],
+    "links": [
+     {
+      "id": "xeqvljn",
+      "text": "Jobs.cz",
+      "url": "https://www.jobs.cz/"
+     },
+     {
+      "id": "h3ykt79",
+      "text": "StartupJobs",
+      "url": "https://www.startupjobs.cz/"
+     },
+     {
+      "id": "2be8sd5",
+      "text": "LinkedIn Jobs",
+      "url": "https://www.linkedin.com/jobs/"
+     }
+    ]
+   },
+   "8qvydul": {
+    "id": "8qvydul",
+    "owner": "Alex",
+    "order": -1,
+    "kind": "home",
+    "name": "Taking care of my surroundings",
+    "match": "úklid, uklid, uklíz, nádobí, prádlo, vysav, tidy, clean, dishes, laundry, mop",
+    "need": [
+     {
+      "id": "qulwqvl",
+      "text": "A bin bag, within reach"
+     },
+     {
+      "id": "yq7psqp",
+      "text": "A basket for the laundry"
+     },
+     {
+      "id": "vx7h81z",
+      "text": "Music, a podcast, or a show for the girls"
+     },
+     {
+      "id": "1rah9bz",
+      "text": "Water"
+     },
+     {
+      "id": "4hpnp2p",
+      "text": "A cloth and spray where you’re working"
+     }
+    ],
+    "links": []
+   },
+   "n9bf98q": {
+    "id": "n9bf98q",
+    "owner": "Sam",
+    "order": 0,
+    "name": "House projects",
+    "match": "brán, gate, oprav, postavit, namontovat, ovladač, garáž, dílna, workshop",
+    "need": [
+     {
+      "id": "6cov3md",
+      "text": "The tools for it, in one place"
+     },
+     {
+      "id": "5x2imfy",
+      "text": "Phone on silent"
+     },
+     {
+      "id": "3vvinhj",
+      "text": "Water"
+     }
+    ],
+    "links": []
+   },
+   "c8gawxi": {
+    "id": "c8gawxi",
+    "owner": "Sam",
+    "order": 1,
+    "name": "Admin & paperwork",
+    "match": "faktur, platb, pojišť, úřad, formulář, smlouv, billing, daně, tax",
+    "need": [
+     {
+      "id": "4xf72s9",
+      "text": "Laptop and charger"
+     },
+     {
+      "id": "lw5ntru",
+      "text": "The papers or emails it needs"
+     },
+     {
+      "id": "1toafaz",
+      "text": "Water"
+     }
+    ],
+    "links": []
+   },
+   "qj1av75": {
+    "id": "qj1av75",
+    "owner": "Sam",
+    "order": -1,
+    "kind": "home",
+    "name": "Taking care of my surroundings",
+    "match": "úklid, uklid, uklíz, nádobí, prádlo, vysav, tidy, clean, dishes, laundry, mop",
+    "need": [
+     {
+      "id": "31oya3i",
+      "text": "A bin bag, within reach"
+     },
+     {
+      "id": "x3v565g",
+      "text": "A basket for the laundry"
+     },
+     {
+      "id": "o51rcsx",
+      "text": "Music, a podcast, or a show for the girls"
+     },
+     {
+      "id": "t2rjr5g",
+      "text": "Water"
+     },
+     {
+      "id": "felb0uz",
+      "text": "A cloth and spray where you’re working"
+     }
+    ],
+    "links": []
+   }
+  },
+  "seeded": {
+   "Alex": true,
+   "Sam": true
+  },
+  "hmSeeded": {
+   "Alex": true,
+   "Sam": true
+  }
+ }
+}

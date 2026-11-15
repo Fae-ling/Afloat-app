@@ -1,0 +1,111 @@
+# Publishes Afloat (app, Meals, server, security rules) to Firebase whenever main changes.
+# Repository variables: FIREBASE_PROJECT, FIREBASE_WEB_CONFIG, OWNER_EMAIL, TRELLO_KEY, GOOGLE_CLIENT_ID, SIGNIN_GATE (optional: on), PUSH (optional: on), FIREBASE_VAPID_KEY (optional)
+# Repository secrets:   FIREBASE_SERVICE_ACCOUNT, GOOGLE_CLIENT_SECRET, ANTHROPIC_API_KEY
+name: Deploy Afloat
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+    inputs:
+      update_secrets:
+        description: Also copy GOOGLE_CLIENT_SECRET and ANTHROPIC_API_KEY to the server
+        type: boolean
+        default: false
+      show_log:
+        description: Only print a server function's recent log (no deploy)
+        type: string
+        default: ''
+concurrency: deploy
+jobs:
+  deploy:
+    # waits quietly until the Firebase project is set up (repository variable FIREBASE_PROJECT)
+    if: ${{ vars.FIREBASE_PROJECT != '' }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with: { fetch-depth: 0 }
+      - uses: actions/setup-node@v4
+        with: { node-version: 22 }
+      # one second, no installs: every app file loaded and cached, everything parses, no name defined twice, map current.
+      # (The browser tests stay on Claude's side: the full suite would use up GitHub's free minutes for a private repo.)
+      - name: App check
+        env:
+          # the household's names and places, kept out of the files everyone can download (tools/check.js)
+          PRIVATE_WORDS: ${{ secrets.PRIVATE_WORDS }}
+        run: node tools/check.js
+      - name: Server tests
+        working-directory: functions
+        run: npm ci && npm test
+      - name: Fill in owner and keys
+        env:
+          OWNER_EMAIL: ${{ vars.OWNER_EMAIL }}
+          TRELLO_KEY: ${{ vars.TRELLO_KEY }}
+          GOOGLE_CLIENT_ID: ${{ vars.GOOGLE_CLIENT_ID }}
+          SIGNIN_GATE: ${{ vars.SIGNIN_GATE }}
+          PUSH: ${{ vars.PUSH }}
+        run: |
+          test -n "$OWNER_EMAIL" || { echo "Set the OWNER_EMAIL repository variable"; exit 1; }
+          owner=$(echo "$OWNER_EMAIL" | tr '[:upper:]' '[:lower:]')
+          sed -i "s/__OWNER_EMAIL__/$owner/g" firestore.rules storage.rules
+          printf 'OWNER_EMAIL=%s\nTRELLO_KEY=%s\nGOOGLE_CLIENT_ID=%s\nSIGNIN_GATE=%s\nPUSH=%s\n' "$owner" "$TRELLO_KEY" "$GOOGLE_CLIENT_ID" "$SIGNIN_GATE" "$PUSH" > functions/.env
+      # a new address for the styles on every deploy, so a phone never keeps last deploy's look (10 Nov 2026: it did, for an hour)
+      - name: Stamp the stylesheets
+        run: |
+          v=$(git rev-parse --short HEAD)
+          sed -i "s#href=\"app/afloat.css\"#href=\"app/afloat.css?v=$v\"#" index.html
+          sed -i "s#href=\"meals.css\"#href=\"meals.css?v=$v\"#" meals/index.html
+          grep -q "afloat.css?v=$v" index.html && grep -q "meals.css?v=$v" meals/index.html
+      - name: Fill in the Firebase web settings
+        env:
+          WEB: ${{ vars.FIREBASE_WEB_CONFIG }}
+          VAPID: ${{ vars.FIREBASE_VAPID_KEY }}
+        run: |
+          test -n "$WEB" || { echo "Set the FIREBASE_WEB_CONFIG repository variable"; exit 1; }
+          WEB=$(printf '%s' "$WEB" | sed '1s/^[^{]*//; $s/;[[:space:]]*$//')
+          printf 'window.AFLOAT_CONFIG = { firebase: (%s), region: %s, vapidKey: %s };\n' "$WEB" "'europe-west1'" "'$(printf '%s' "$VAPID" | tr -cd 'A-Za-z0-9_-')'" > platform/config.js
+          node -e "global.window={};require('./platform/config.js');if(!window.AFLOAT_CONFIG.firebase.apiKey)process.exit(1)" || { echo "FIREBASE_WEB_CONFIG doesn't look like Firebase's config object"; exit 1; }
+      - uses: google-github-actions/auth@v2
+        with:
+          credentials_json: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
+      - name: Copy secrets to the server
+        if: ${{ inputs.update_secrets }}
+        env:
+          GCS: ${{ secrets.GOOGLE_CLIENT_SECRET }}
+          AK: ${{ secrets.ANTHROPIC_API_KEY }}
+          P: ${{ vars.FIREBASE_PROJECT }}
+        run: |
+          printf '%s' "$GCS" | npx -y firebase-tools@15 functions:secrets:set GOOGLE_CLIENT_SECRET --data-file=- --project "$P" --force --non-interactive
+          printf '%s' "$AK" | npx -y firebase-tools@15 functions:secrets:set ANTHROPIC_API_KEY --data-file=- --project "$P" --force --non-interactive
+      - name: Server log
+        if: ${{ inputs.show_log != '' && inputs.show_log != null }}
+        env:
+          P: ${{ vars.FIREBASE_PROJECT }}
+          FN: ${{ inputs.show_log }}
+        run: |
+          U="https://europe-west1-$P.cloudfunctions.net"
+          for f in "$FN" connections; do
+            echo "== POST $f (no sign-in: expect 401 'Sign in first')"; curl -s -o /tmp/o -w "HTTP %{http_code}\n" -X POST -H 'content-type: application/json' -d '{"data":{}}' "$U/$f"; head -c 300 /tmp/o; echo
+            echo "== OPTIONS $f from the app's origin (CORS)"; curl -s -o /dev/null -D - -X OPTIONS -H "Origin: https://$P.web.app" -H 'Access-Control-Request-Method: POST' -H 'Access-Control-Request-Headers: content-type,authorization' "$U/$f" | grep -iE '^HTTP|access-control-allow-origin' || true
+          done
+          SINCE=$(date -u -d '-3 hours' +%FT%TZ)
+          echo "== requests and errors since $SINCE"
+          gcloud logging read "resource.type=cloud_run_revision AND resource.labels.service_name=\"$FN\" AND timestamp>=\"$SINCE\"" --project "$P" --limit 80 --order asc \
+            --format='value(timestamp,severity,httpRequest.requestMethod,httpRequest.status,textPayload,jsonPayload.message)' 2>&1 | cut -c1-400 || echo "no log access"
+      # The server is rebuilt only when functions/ changed (or on a manual run): each rebuild costs build minutes and
+      # leaves a stored server image, the only things in Afloat's setup that could ever cost money.
+      - name: What changed
+        id: what
+        if: ${{ inputs.show_log == '' || inputs.show_log == null }}
+        env:
+          BEFORE: ${{ github.event.before }}
+          EVENT: ${{ github.event_name }}
+        run: |
+          only=hosting,firestore,storage
+          if [ "$EVENT" != "push" ] || [ -z "$BEFORE" ] || ! git cat-file -e "$BEFORE" 2>/dev/null || git diff --name-only "$BEFORE" HEAD | grep -qE '^(functions/|firebase\.json$|\.github/)'; then only="$only,functions"; fi
+          echo "only=$only" >> "$GITHUB_OUTPUT"; echo "Deploying: $only"
+      - name: Deploy
+        if: ${{ inputs.show_log == '' || inputs.show_log == null }}
+        run: npx -y firebase-tools@15 deploy --only "${{ steps.what.outputs.only }}" --project "${{ vars.FIREBASE_PROJECT }}" --non-interactive --force
+      - name: Keep only the newest server images
+        if: ${{ (inputs.show_log == '' || inputs.show_log == null) && contains(steps.what.outputs.only, 'functions') }}
+        run: npx -y firebase-tools@15 functions:artifacts:setpolicy --days 1 --location europe-west1 --project "${{ vars.FIREBASE_PROJECT }}" --non-interactive --force || echo "Couldn't set the image clean-up policy (harmless)."

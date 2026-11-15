@@ -1,0 +1,37 @@
+rules_version = '2';
+// Each household sees only its own data (10 Nov 2026).
+// The first household's data stays at apps/<app>/: its owner is set at deploy time, everyone else is added by the owner
+// in Afloat (Settings → Connections → Household).
+// Every other household lives under households/<hid>/, with its members listed in households/<hid>.members.
+// users/<email> says which household an address is in; only that address can read it. Invitations, Claude keys and
+// each person's private connections are server-only.
+service cloud.firestore {
+  match /databases/{db}/documents {
+    function email() { return request.auth.token.email.lower(); }
+    function verified() { return request.auth != null && request.auth.token.email_verified == true; }
+    function owner() { return verified() && email() == '__OWNER_EMAIL__'; }
+    function member() {
+      return owner() || (verified()
+        && exists(/databases/$(db)/documents/access/members)
+        && email() in get(/databases/$(db)/documents/access/members).data.emails);
+    }
+    function inHouse(hid) {
+      return verified() && exists(/databases/$(db)/documents/households/$(hid))
+        && email() in get(/databases/$(db)/documents/households/$(hid)).data.members;
+    }
+    match /apps/{app}/{rest=**} { allow read, write: if member(); }
+    match /access/members { allow read: if member(); allow write: if false; }
+    match /households/{hid} { allow read: if inHouse(hid); allow write: if false; }
+    match /households/{hid}/apps/{app}/{rest=**} { allow read, write: if inHouse(hid); }
+    match /users/{e} { allow read: if verified() && email() == e; allow write: if false; }
+    // a plan planned together by several households (functions/together.js): its members read it and change only the plan;
+    // who is in it, and invitations, change only on the server
+    match /together/{id} {
+      allow read: if verified() && email() in resource.data.members;
+      allow update: if verified() && email() in resource.data.members
+        && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['plan', 'at']);
+      allow create, delete: if false;
+    }
+    match /private/{rest=**} { allow read, write: if false; }
+  }
+}

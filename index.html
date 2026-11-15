@@ -1,0 +1,81 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}
+</style><link rel="stylesheet" href="app/afloat.css"></head><body>
+<title>Afloat</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#257A75">
+<link rel="icon" href="icons/icon-192.png">
+<link rel="apple-touch-icon" href="icons/icon-192.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&display=swap">
+<script src="platform/config.js"></script>
+<script src="platform/claude.js" data-app="afloat"></script>
+<script src="platform/food.js"></script>
+<script src="platform/swipe.js"></script>
+<script src="platform/todo.js"></script>
+
+<div class="wrap">
+  <header class="top">
+    <div class="brand"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><circle cx="15" cy="15" r="10" fill="none" stroke="var(--ring-band)" stroke-width="6"/><circle cx="15" cy="15" r="10" fill="none" stroke="var(--accent)" stroke-width="6" stroke-dasharray="7.854 7.854"/><circle cx="15" cy="15" r="13" fill="none" stroke="var(--ink)" stroke-opacity=".25" stroke-width="1"/><circle cx="15" cy="15" r="7" fill="none" stroke="var(--ink)" stroke-opacity=".25" stroke-width="1"/></svg>Afloat</div>
+    <div class="modesw" id="modesw" role="group" aria-label="Home or Active"></div>
+    <div class="hdr-actions"><button class="iconbtn" data-act="capture" aria-label="Add a to-do or brain dump"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg></button>
+    <button class="iconbtn" data-act="settings" aria-label="Household settings"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="9" cy="8" r="3.2"/><path d="M3.5 19c.8-3.2 3-5 5.5-5s4.7 1.8 5.5 5"/><circle cx="17" cy="9" r="2.4"/><path d="M16 14.2c2.3.1 4 1.7 4.6 4.3"/></svg></button></div>
+  </header>
+  <main id="app"><p class="status">Opening your home…</p></main>
+  <div id="meals" hidden></div>
+  <footer class="credit">Built on the ideas in KC Davis’s <i>How to Keep House While Drowning</i>.</footer>
+</div>
+<nav class="tabs" aria-label="Sections" data-sw-tabs><div class="in" id="tabs"></div></nav>
+<div id="timer" hidden></div>
+<div id="sheet"></div>
+<div id="toast" hidden></div>
+
+<!-- the app itself: one file per area, sharing one scope (map: CLAUDE.md, docs/MAP.md) -->
+<script src="app/core.js"></script>
+<script src="app/trello.js"></script>
+<script src="app/tasks.js"></script>
+<script src="app/capture.js"></script>
+<script src="app/store.js"></script>
+<script src="app/render.js"></script>
+<script src="app/briefing.js"></script>
+<script src="app/going-out.js"></script>
+<script src="app/reminders.js"></script>
+<script src="app/calm.js"></script>
+<script src="app/today.js"></script>
+<script src="app/news.js"></script>
+<script src="app/notes-usage.js"></script>
+<script src="app/situation.js"></script>
+<script src="app/sick-day.js"></script>
+<script src="app/self-care.js"></script>
+<script src="app/our-days.js"></script>
+<script src="app/together.js"></script>
+<script src="app/job.js"></script>
+<script src="app/checkup.js"></script>
+<script src="app/date-ideas.js"></script>
+<script src="app/trips.js"></script>
+<script src="app/family.js"></script>
+<script src="app/links.js"></script>
+<script src="app/plan-tomorrow.js"></script>
+<script src="app/event-plans.js"></script>
+<script src="app/plans.js"></script>
+<script src="app/plans-together.js"></script>
+<script src="app/plans-travel.js"></script>
+<script src="app/plans-more.js"></script>
+<script src="app/colours.js"></script>
+<script src="app/calendar-sync.js"></script>
+<script src="app/recurring.js"></script>
+<script src="app/event-form.js"></script>
+<script src="app/calendar-ui.js"></script>
+<script src="app/support.js"></script>
+<script src="app/rhythms.js"></script>
+<script src="app/beat.js"></script>
+<script src="app/settings.js"></script>
+<script src="app/welcome.js"></script>
+<script src="app/focus.js"></script>
+<script src="app/surroundings.js"></script>
+<script src="app/events.js"></script>
+<script src="app/boot.js"></script>
+</script>
+
+</body></html>

@@ -1,0 +1,38 @@
+# The real-Firebase check: two "phones" run the real app with the real Firebase SDK and the real security rules against
+# Firebase's local emulator, a throwaway database (project "demo-afloat", which can't reach any real project). The
+# household's data is never touched and no secrets are used. See tests/real-firebase/check.js for what it checks.
+# Runs when the saving code, the Firebase layer or the rules change, and on request (Actions → Real Firebase check → Run).
+# A few minutes of GitHub's free monthly minutes per run. It doesn't hold up the deploy; a failure shows as a red ✗ and an email.
+name: Real Firebase check
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - platform/claude.js
+      - app/store.js
+      - app/render.js
+      - firestore.rules
+      - tests/real-firebase/**
+      - .github/workflows/real-firebase.yml
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22 }
+      - uses: actions/setup-java@v5
+        with: { distribution: temurin, java-version: 21 }
+      - name: Tools (in a separate folder, so nothing is added to the app)
+        run: |
+          mkdir -p /tmp/tools && cd /tmp/tools && npm init -y >/dev/null
+          npm i --no-audit --no-fund playwright@1 firebase-tools@15 >/dev/null
+          npx playwright install --with-deps chromium
+      - name: The real rules, with a test owner
+        run: sed "s/__OWNER_EMAIL__/owner@afloat.test/g" firestore.rules > tests/real-firebase/firestore.rules
+      - name: Run the check inside the emulator
+        env:
+          NODE_PATH: /tmp/tools/node_modules
+        run: /tmp/tools/node_modules/.bin/firebase emulators:exec --config tests/real-firebase/firebase.json --only firestore,auth --project demo-afloat "node tests/real-firebase/check.js"

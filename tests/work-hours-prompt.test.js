@@ -1,0 +1,24 @@
+const { chromium, devices } = require('playwright');
+(async()=>{const b=await chromium.launch();const ctx=await b.newContext({...devices['iPhone 13']});const p=await ctx.newPage();
+const errs=[];p.on('pageerror',e=>errs.push(e.message));
+const seed=JSON.parse(require('fs').readFileSync(__dirname+'/seed.json','utf8'));seed['home/people'].people.Sam.setupDone=true;for(const k of ['start','back','leave'])delete seed['home/people'].people.Sam[k];seed['home/household'].baseline=1;
+await p.addInitScript(`window.__SEED=${JSON.stringify(seed)};`);await p.addInitScript(require('fs').readFileSync(__dirname+'/fakedb.js','utf8'));await p.addInitScript(()=>{localStorage.setItem('afloat.me','Sam')});
+await p.clock.install({time:new Date('2026-11-04T05:10:00')});
+await p.goto('file://'+require('path').resolve(__dirname,'../index.html')+'#today');await p.waitForTimeout(1200);
+const ok=(c,m)=>console.log((c?'PASS ':'FAIL ')+m);
+ok(await p.locator('.brief-ov .whcard').isVisible(), '1 Sam is asked on the opening screen');
+await p.screenshot({path:__dirname+'/shots/wh1.png'});
+await p.fill('.brief-ov #whLeave','05:15');await p.waitForTimeout(200);
+await p.fill('.brief-ov #whBack','15:30');await p.waitForTimeout(300);
+ok(await p.evaluate(()=>{const m=window.__st['home/people'].people.Sam;return m.leave==='05:15'&&m.back==='15:30'}), '2 his times are saved');
+ok(!(await p.$('.whcard')), '3 the prompt goes away once both are set');
+await p.tap('[data-act=brief-close]');await p.waitForTimeout(150);
+await p.evaluate(()=>{location.hash='calendar'});await p.waitForTimeout(400);
+const g=await p.evaluate(()=>[...document.querySelectorAll('.sitlist li b')].map(x=>x.textContent).join(' | '));
+ok(/Thu 5 Nov, 10:30–12:00/.test(g), '4 now Afloat sees nobody has the girls during Alex’s class: '+g);
+// Alex: "Not now" snoozes
+const p2=await ctx.newPage();await p2.addInitScript(`window.__SEED=${JSON.stringify(seed)};`);await p2.addInitScript(require('fs').readFileSync(__dirname+'/fakedb.js','utf8'));await p2.addInitScript(()=>{localStorage.setItem('afloat.me','Alex');localStorage.setItem('afloat.brief','x');localStorage.removeItem('afloat.whSnooze')});
+await p2.clock.install({time:new Date('2026-11-04T09:10:00')});await p2.goto('file://'+require('path').resolve(__dirname,'../index.html')+'#today');await p2.waitForTimeout(1200);
+if(await p2.$('[data-act=brief-close]'))await p2.tap('[data-act=brief-close]');await p2.waitForTimeout(150);
+ok(!(await p2.$('.whcard')), '5 Alex (freelance) is not asked');
+console.log(errs.length?errs.join('\n'):'NO PAGE ERRORS');await b.close()})();

@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Prague public transport key · Afloat</title>
+<meta name="color-scheme" content="light dark">
+<style>
+  :root { --bg: #EEF3F2; --card: #fff; --ink: #14303A; --muted: #4F6870; --line: #D5E1DF; --sea: #257A75; --warm: #FFF4E5; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #10191C; --card: #18252A; --ink: #E4EEEC; --muted: #9DB2B1; --line: #2A3B40; --sea: #5FB7AE; --warm: #2A2418; } }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 17px/1.55 system-ui, -apple-system, "Segoe UI", sans-serif; }
+  main { max-width: 640px; margin: 0 auto; padding: 28px 16px 48px; }
+  h1 { font-size: 1.6rem; line-height: 1.2; margin: 0 0 6px; }
+  .lede { color: var(--muted); margin: 0 0 22px; }
+  section { background: var(--card); border: 1px solid var(--line); border-radius: 18px; padding: 18px 18px 6px; margin: 0 0 14px; }
+  h2 { font-size: 1.1rem; margin: 0 0 8px; }
+  ol { padding-left: 1.3em; margin: 0 0 12px; } li { margin: 0 0 8px; }
+  .note { background: var(--warm); border-radius: 14px; padding: 12px 14px; margin: 0 0 12px; }
+  code, b.k { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: .92em; }
+  a { color: var(--sea); }
+  .back { display: inline-block; margin-top: 10px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Prague public transport: live delays</h1>
+  <p class="lede">With this key, a train, bus or tram in one of your plans shows whether it’s on time, late or cancelled, from three hours before you go. It covers Prague and Central Bohemia (PID). The key comes from Golemio, Prague’s open data platform. It’s free and takes about five minutes, once.</p>
+
+  <section>
+    <h2>What it costs</h2>
+    <p>Nothing. Golemio’s keys are free, with no card and no plan to choose. Afloat only asks about the departures in your plans, a handful of times on the day, far below any limit.</p>
+  </section>
+
+  <section>
+    <h2>1. Make an account</h2>
+    <ol>
+      <li>Open <a href="https://api.golemio.cz/api-keys/" target="_blank" rel="noopener">api.golemio.cz/api-keys</a>. The page is in Czech; your browser can translate it if you like.</li>
+      <li>Register with your email address and a password.</li>
+      <li>Open the email Golemio sends you and confirm your address with the link in it.</li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>2. Make the key</h2>
+    <ol>
+      <li>Go back to <a href="https://api.golemio.cz/api-keys/" target="_blank" rel="noopener">api.golemio.cz/api-keys</a> and sign in.</li>
+      <li>Use the button that generates a new API key.</li>
+      <li><b>Copy the whole key.</b> It’s long (a few hundred characters, with dots in it), so copy it with the copy button or select all of it; a missing piece is the usual reason it fails.</li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>Add it to Afloat</h2>
+    <ol>
+      <li>In Afloat, open <b>Settings</b> (top right) → <b>Connections</b>, and scroll to <b>Travel services for Plans</b>.</li>
+      <li>Under <b>Prague public transport</b>, paste the key and tap <b>Save</b>. Afloat checks it with one small request, then it works for everyone in your household.</li>
+    </ol>
+    <div class="note">Afloat keeps the key on its server, where only Afloat can use it. Your phones, the other people in your household and other households never see it; Connections only shows its last four characters. To stop, tap <b>Remove</b> in Connections. Only the household’s owner can add or remove keys.</div>
+  </section>
+
+  <section>
+    <h2>Using it in a plan</h2>
+    <ol>
+      <li>In a plan, under <b>Getting there</b>, set the journey to <b>Train, bus or tram</b>.</li>
+      <li>Fill in the <b>stop you leave from</b> (as it’s called on the timetable, e.g. <i>Smíchovské nádraží</i>), the <b>line</b> (S7, 22, R9) and the time it leaves.</li>
+      <li>On the day, Afloat shows “on time”, “8 min late” or “cancelled” on Today, with your own “if the train is cancelled” plan when there is one.</li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>If something doesn’t work</h2>
+    <ol>
+      <li><b>“didn’t accept that key”</b>: the key was probably cut short when copying. Copy it again, all of it.</li>
+      <li><b>“isn’t on the board (yet)”</b>: check the stop’s name matches the timetable, and the line and time. The board only reaches a few hours ahead, so it fills in on the day.</li>
+      <li><b>Outside Prague and Central Bohemia</b>: Golemio only knows PID. Elsewhere, Afloat uses the time you planned.</li>
+    </ol>
+  </section>
+  <a class="back" href="/#plans">← Back to Afloat</a>
+</main>
+</body>
+</html>

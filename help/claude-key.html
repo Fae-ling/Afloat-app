@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Your household's Claude key · Afloat</title>
+<meta name="color-scheme" content="light dark">
+<style>
+  :root { --bg: #EEF3F2; --card: #fff; --ink: #14303A; --muted: #4F6870; --line: #D5E1DF; --sea: #257A75; --warm: #FFF4E5; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #10191C; --card: #18252A; --ink: #E4EEEC; --muted: #9DB2B1; --line: #2A3B40; --sea: #5FB7AE; --warm: #2A2418; } }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 17px/1.55 system-ui, -apple-system, "Segoe UI", sans-serif; }
+  main { max-width: 640px; margin: 0 auto; padding: 28px 16px 48px; }
+  h1 { font-size: 1.6rem; line-height: 1.2; margin: 0 0 6px; }
+  .lede { color: var(--muted); margin: 0 0 22px; }
+  section { background: var(--card); border: 1px solid var(--line); border-radius: 18px; padding: 18px 18px 6px; margin: 0 0 14px; }
+  h2 { font-size: 1.1rem; margin: 0 0 8px; }
+  ol { padding-left: 1.3em; margin: 0 0 12px; } li { margin: 0 0 8px; }
+  .note { background: var(--warm); border-radius: 14px; padding: 12px 14px; margin: 0 0 12px; }
+  code, b.k { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: .92em; }
+  a { color: var(--sea); }
+  .back { display: inline-block; margin-top: 10px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Your household’s Claude key</h1>
+  <p class="lede">Afloat uses Claude for ideas (trips, date nights, the season check), for sorting your brain dump and for reading photos of invitations and receipts. Each household brings its own key, so your use is yours alone and you pay Anthropic directly. It takes about ten minutes, once. Only the household’s owner can add it.</p>
+
+  <section>
+    <h2>What it costs</h2>
+    <p>Afloat uses Claude’s cheapest model for nearly everything, so a typical household spends well under a dollar a month; reading photos costs a few cents each. Credits are prepaid: you can never spend more than you put in. Five dollars lasts most households many months.</p>
+    <p>You can also set a monthly cap in Afloat (Settings → Claude this month). Past it, Claude rests until the 1st and Afloat uses its built-in ideas.</p>
+  </section>
+
+  <section>
+    <h2>1. Make an account and add credits</h2>
+    <ol>
+      <li>Open the Claude Console at <a href="https://platform.claude.com" target="_blank" rel="noopener">platform.claude.com</a> and sign up (an email address is enough).</li>
+      <li>Answer the short questions about your organisation; “personal use” is fine.</li>
+      <li>Go to <b>Settings → Billing</b> and choose <b>Purchase credits</b>. The smallest amount ($5) is plenty to start. Leave automatic reload off if you want a hard limit.</li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>2. Create the key</h2>
+    <ol>
+      <li>Open <b>API Keys</b> in the menu on the left and choose <b>Create key</b>.</li>
+      <li>Name it something you’ll recognise, like <code>Afloat</code>, and create it.</li>
+      <li><b>Copy the key straight away.</b> It starts with <code>sk-ant-</code> and is shown only once. If you lose it, just make a new one.</li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>3. Add it to Afloat</h2>
+    <ol>
+      <li>In Afloat, open <b>Settings</b> (top right) → <b>Connections</b>.</li>
+      <li>Under <b>Claude</b>, paste the key and tap <b>Save</b>. Afloat checks it with one tiny request, then Claude is on for everyone in your household.</li>
+    </ol>
+    <div class="note">Afloat keeps the key on its server, where only Afloat can use it. Your phones, the other people in your household and other households never see it; Connections only shows its last four characters. To stop, tap <b>Remove</b> in Connections, or delete the key in the Console.</div>
+  </section>
+
+  <section>
+    <h2>If something doesn’t work</h2>
+    <ol>
+      <li><b>“Anthropic didn’t accept that key”</b>: check the whole key was copied (no space at the start or end), and that there are credits on the account.</li>
+      <li><b>Claude stopped answering</b>: the credits may have run out, or Afloat’s monthly cap was reached. Add credits, or raise the cap in Settings → Claude this month.</li>
+      <li><b>You lost the key</b>: create a new one in the Console and paste it in; the old one can be deleted there.</li>
+    </ol>
+  </section>
+  <a class="back" href="/#today">← Back to Afloat</a>
+</main>
+</body>
+</html>
